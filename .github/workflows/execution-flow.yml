@@ -75,3 +75,17 @@ jobs:
         run: ls
       - name: Deploy
         run: echo "Deploying..."
+  report:
+    name: Report
+    runs-on: ubuntu-latest
+    if: failure()
+    steps:
+      - name: Get test report
+        uses: actions/download-artifact@v4
+        with:
+          name: test-report
+      - name: Output test report
+        run: cat test.json
+      - name: Output information
+        run: |
+          echo "github.workflow: ${{ github.workflow }}"
