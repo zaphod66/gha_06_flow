@@ -18,4 +18,4 @@ jobs:
       - name: Output contents
         run: ls -la
       - name: Output information
-        run: echo "Deplotying and uploading artifacts"
+        run: echo "Deploying and uploading artifacts"
