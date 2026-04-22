@@ -7,6 +7,10 @@ on:
         required: false
         default: "dist"
         type: string
+#    secrets:
+#      some-secret:
+#        description: "The secrets to deploy"
+#        required: true
 jobs:
   deploy:
     runs-on: ubuntu-latest
