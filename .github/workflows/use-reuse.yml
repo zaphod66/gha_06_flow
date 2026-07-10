@@ -73,6 +73,7 @@ jobs:
     uses: ./.github/workflows/reusable.yml
     with:
       artifacts-name: dist-files
+      path: dist
   report:
     needs: [lint, deploy]
     name: Report
