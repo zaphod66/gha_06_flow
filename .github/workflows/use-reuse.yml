@@ -65,6 +65,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           artifacts-name: dist-files
+          path: dist
 #         secrets:
 #           some-secret: ${{ secrets.some-secret }}
   deploy:
